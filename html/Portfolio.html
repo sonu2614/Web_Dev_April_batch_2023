@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+</head>
+<body>
+    <!-- navbar section -->
+    <nav>
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About me</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/sonu-kumar-91420217b/">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+<!-- main content -->
+    <main>
+        <section>
+            <h3 align="center">About me</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium ipsa totam culpa delectus, deserunt eveniet perferendis odit error dolores neque porro, maxime voluptatum nisi, consequatur quidem assumenda corrupti ratione?</p>
+        </section>
+        <section>
+            <h3 align="center">Contact me</h3>
+            <form action="./script.js" method="POST">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="Type your name" value="sonu" name="name" required maxlength="50">
+                </div>
+                <br>
+                <div>
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" cols="100" rows="5"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="tel">Phone Number</label><br>
+                    <input type="tel" id="tel" id="tel" pattern="[0-9]{10}" value="7477665513" required maxlength="10">
+                </div>
+                <br>
+                <div>
+                    <label for="date-time">Date and Time of appointment</label><br>
+                    <input type="datetime-local" id="datetime-local">
+                </div>
+                <br>
+                <div>
+                    <label for="contact-type">Contact via call or whatsapp ?  </label>
+                    <lable for="call">Call: </lable>
+                    <input type="radio"name="contact-type" value="call">
+
+                    <lable for="whatsapp">Whatsapp: </lable>
+                    <input type="radio"name="contact-type" value="call">
+                </div>
+                <br>
+                <div>
+                    <label for="time-slot">Time Slot:</label>
+                    <label for="11-3">11am-3pm</label>
+                    <input type="checkbox" >
+                    <label for="3-7">3pm-7pm</label>
+                    <input type="checkbox" >
+                    <label for="7-11">7pm-11pm</label>
+                    <input type="checkbox" >
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+                <div></div>
+            </form>
+        </section>
+        <section>
+            <h3 align="center">Project</h3>
+            <table border="1" cell-spacing="0">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>notes app</td>
+                    <td>this contains notes app,where you can add,edit,remove your notes.</td>
+                    <td><a href="https://stackoverflow.com/questions/19611599/html5-phone-number-validation-with-pattern">https://stackoverflow.com/questions/19611599/html5-phone-number-validation-with-pattern</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>task app</td>
+                    <td>this contains task app,where you can add,edit,remove your task.</td>
+                    <td><a href="https://leetcode.com/problemset/all/">https://leetcode.com/problemset/all/</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+
+    <footer>
+        <h3 align="center">You can also conect with me on : </h3>
+        <div align="center">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
+            <a href="https://github.com/sonu2614" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/sonu-kumar-91420217b/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
